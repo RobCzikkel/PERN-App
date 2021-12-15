@@ -1,0 +1,37 @@
+{
+  "name": "shop",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "find-config": "^1.0.0",
+    "http-errors": "^1.6.3",
+    "jade": "~1.11.0",
+    "js-yaml": "^4.1.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "pg-promise": "^10.11.0",
+    "stripe": "^8.191.0",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

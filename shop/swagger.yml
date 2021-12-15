@@ -1,0 +1,210 @@
+swagger: "2.0"
+
+info:
+  description: "E-commerce REST API - Portfolio project"
+  version: "1.0.0"
+  title: "E-commerce REST API"
+
+schemes: 
+  - http
+
+host: localhost:3000
+
+basePath: "/"
+
+paths:
+  /users:
+    get:
+      summary: "Lists all users"
+      description: "List all users"
+      produces: 
+        - "application/json"
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /users/{id}:
+    get:
+      summary: "Retrieves a single user"
+      description: "Find user by ID"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: User ID
+           in: path
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /products:
+    get:
+      summary: "Lists all products"
+      description: "Get all products"
+      produces: 
+        - "application/json"
+      parameters:
+        - name: category
+          description: Category name
+          in: query
+          required: true
+          type: string
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /products/{id}:
+    get:
+      summary: "Retrieves a single product"
+      description: "Find product by ID"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: Product ID
+           in: path
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /cart:
+    get:
+      summary: "Retrieves user cart"
+      description: "Get  cart"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: User ID
+           in: cookie
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+    post:
+      summary: "Creates a user cart"
+      description: "Create cart"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: User ID
+           in: cookie
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /cart/items:
+    post:
+      summary: "Creates cart item"
+      description: "Add item to cart"
+      produces: 
+        - "application/json"
+      parameters:
+        - name: id
+          description: User ID
+          in: cookie
+          required: true
+          type: integer
+        - name: prod_id
+          description: Product ID
+          in: body
+          required: true
+          type: integer
+        - name: quantity
+          description: quantity of product to be added
+          in: body
+          required: true
+          type: integer
+      responses:
+        201:
+          description: 201 Created
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /orders:
+    get:
+      summary: "Retrieves user orders"
+      description: "Show orders"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: User ID
+           in: cookie
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+  /orders/{id}:
+    get:
+      summary: "Retrieves user orders"
+      description: "Show orders"
+      produces: 
+        - "application/json"
+      parameters:
+         - name: id
+           description: Order ID
+           in: path
+           required: true
+           type: integer
+      responses:
+        200:
+          description: 200 Success
+          schema: 
+            type: object
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+
+
+            

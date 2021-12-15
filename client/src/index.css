@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .payment {
+        @apply p-2 rounded-sm border-indigo-800 border my-2;
+    }
+
+    .labels {
+        @apply text-gray-600 text-sm;
+    }
+
+    .inputs {
+        @apply border mt-4 w-96 rounded border-indigo-400 p-3
+    }
+}

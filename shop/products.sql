@@ -1,0 +1,10 @@
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 Low Blue','The classic Jordan 1s low version. Originally released in 1985', 180, 'lows', 'low_blue.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 Low Grey','The classic Jordan 1s low version. Originally released in 1985', 180, 'lows', 'low_grey.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 Low Purple','The classic Jordan 1s low version. Originally released in 1985', 180, 'lows', 'low_purple.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 Low Red','The classic Jordan 1s low version. Originally released in 1985', 180, 'lows', 'low_red.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 Low Travis','The classic Jordan 1s low version. Originally released in 1985', 180, 'lows', 'low_travis.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 High Black','The classic Jordan 1s. Originally released in 1985', 180, 'highs', 'high_black.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 High Blue','The classic Jordan 1s. Originally released in 1985', 180, 'highs', 'high_blue.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 High Dark','The classic Jordan 1s. Originally released in 1985', 180, 'highs', 'high_bluegray.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 High Purple','The classic Jordan 1s. Originally released in 1985', 180, 'highs', 'high_purple.webp');
+INSERT INTO products(name, description, price, category, photo) VALUES('Jordan 1 High Red','The classic Jordan 1s. Originally released in 1985', 180, 'highs', 'high_red.webp');
